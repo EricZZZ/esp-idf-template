@@ -19,3 +19,6 @@ ESP_IDF_VERSION = "v5.2.5"
 {% elsif espidfver == "master" %}
 ESP_IDF_VERSION = "master"
 {% endif %}
+# 为了节省硬盘资源，使用全局工具链
+ESP_IDF_TOOLS_INSTALL_DIR = { value = "global" }
+ESP_IDF_SDKCONFIG_DEFAULTS = { value = "./sdkconfig.defaults", relative = true }
